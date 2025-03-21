@@ -1,0 +1,258 @@
+[
+    {
+        "timestamp": "2025-03-15 20:39:31",
+        "ticker": "QQQ",
+        "action": "BUY",
+        "price": 479.6600036621094,
+        "shares": 208.0,
+        "balance": 230.71923828125
+    },
+    {
+        "timestamp": "2025-03-15 20:39:33",
+        "ticker": "SOXX",
+        "action": "BUY",
+        "price": 218.9600067138672,
+        "shares": 1.0,
+        "balance": 11.759231567382812
+    },
+    {
+        "timestamp": "2025-03-15 20:39:34",
+        "ticker": "QQQ",
+        "action": "SELL",
+        "price": 479.6600036621094,
+        "shares": 208.0,
+        "balance": 99781.03999328613
+    },
+    {
+        "timestamp": "2025-03-15 20:39:35",
+        "ticker": "SOXX",
+        "action": "BUY",
+        "price": 229.74000549316406,
+        "shares": 434.0,
+        "balance": 73.87760925292969
+    },
+    {
+        "timestamp": "2025-03-15 20:39:41",
+        "ticker": "SOXX",
+        "action": "SELL",
+        "price": 220.3000030517578,
+        "shares": 435.0,
+        "balance": 95904.37893676758
+    },
+    {
+        "timestamp": "2025-03-15 20:39:41",
+        "ticker": "QQQ",
+        "action": "BUY",
+        "price": 479.6600036621094,
+        "shares": 199.0,
+        "balance": 452.0382080078125
+    },
+    {
+        "timestamp": "2025-03-15 20:39:44",
+        "ticker": "QQQ",
+        "action": "SELL",
+        "price": 479.6600036621094,
+        "shares": 199.0,
+        "balance": 95904.37893676758
+    },
+    {
+        "timestamp": "2025-03-15 20:39:46",
+        "ticker": "QQQ",
+        "action": "BUY",
+        "price": 479.6600036621094,
+        "shares": 199.0,
+        "balance": 452.0382080078125
+    },
+    {
+        "timestamp": "2025-03-15 20:39:52",
+        "ticker": "SOXX",
+        "action": "BUY",
+        "price": 194.4199981689453,
+        "shares": 2.0,
+        "balance": 63.198211669921875
+    },
+    {
+        "timestamp": "2025-03-15 20:39:55",
+        "ticker": "SOXX",
+        "action": "SELL",
+        "price": 201.1199951171875,
+        "shares": 2.0,
+        "balance": 465.4382019042969
+    },
+    {
+        "timestamp": "2025-03-15 20:39:57",
+        "ticker": "QQQ",
+        "action": "SELL",
+        "price": 479.6600036621094,
+        "shares": 199.0,
+        "balance": 95917.77893066406
+    },
+    {
+        "timestamp": "2025-03-15 20:39:59",
+        "ticker": "SOXX",
+        "action": "BUY",
+        "price": 201.1199951171875,
+        "shares": 476.0,
+        "balance": 184.6612548828125
+    },
+    {
+        "timestamp": "2025-03-15 20:40:02",
+        "ticker": "SOXX",
+        "action": "SELL",
+        "price": 201.1199951171875,
+        "shares": 476.0,
+        "balance": 95917.77893066406
+    },
+    {
+        "timestamp": "2025-03-15 20:40:04",
+        "ticker": "SPY",
+        "action": "BUY",
+        "price": 562.8099975585938,
+        "shares": 170.0,
+        "balance": 240.079345703125
+    },
+    {
+        "timestamp": "2025-03-15 20:40:09",
+        "ticker": "SOXX",
+        "action": "BUY",
+        "price": 201.1199951171875,
+        "shares": 1.0,
+        "balance": 38.9593505859375
+    },
+    {
+        "timestamp": "2025-03-15 20:40:15",
+        "ticker": "SPY",
+        "action": "SELL",
+        "price": 562.8099975585938,
+        "shares": 170.0,
+        "balance": 95716.65893554688
+    },
+    {
+        "timestamp": "2025-03-15 20:40:15",
+        "ticker": "QQQ",
+        "action": "BUY",
+        "price": 479.6600036621094,
+        "shares": 199.0,
+        "balance": 264.3182067871094
+    },
+    {
+        "timestamp": "2025-03-15 20:40:16",
+        "ticker": "SOXX",
+        "action": "SELL",
+        "price": 201.1199951171875,
+        "shares": 1.0,
+        "balance": 465.4382019042969
+    },
+    {
+        "timestamp": "2025-03-15 20:40:26",
+        "ticker": "ARKK",
+        "action": "BUY",
+        "price": 62.060001373291016,
+        "shares": 7.0,
+        "balance": 31.018192291259766
+    },
+    {
+        "timestamp": "2025-03-15 20:40:30",
+        "ticker": "QQQ",
+        "action": "SELL",
+        "price": 479.6600036621094,
+        "shares": 199.0,
+        "balance": 95483.35892105103
+    },
+    {
+        "timestamp": "2025-03-15 20:40:31",
+        "ticker": "SOXX",
+        "action": "BUY",
+        "price": 201.1199951171875,
+        "shares": 474.0,
+        "balance": 152.4812355041504
+    },
+    {
+        "timestamp": "2025-03-15 20:40:37",
+        "ticker": "SOXX",
+        "action": "SELL",
+        "price": 201.1199951171875,
+        "shares": 474.0,
+        "balance": 95483.35892105103
+    },
+    {
+        "timestamp": "2025-03-15 20:40:38",
+        "ticker": "ARKK",
+        "action": "SELL",
+        "price": 63.97999954223633,
+        "shares": 7.0,
+        "balance": 95931.21891784668
+    },
+    {
+        "timestamp": "2025-03-15 20:40:40",
+        "ticker": "QQQ",
+        "action": "BUY",
+        "price": 479.6600036621094,
+        "shares": 199.0,
+        "balance": 478.87818908691406
+    },
+    {
+        "timestamp": "2025-03-15 20:40:42",
+        "ticker": "QQQ",
+        "action": "SELL",
+        "price": 479.6600036621094,
+        "shares": 199.0,
+        "balance": 95931.21891784668
+    },
+    {
+        "timestamp": "2025-03-15 20:40:43",
+        "ticker": "VGT",
+        "action": "BUY",
+        "price": 563.010009765625,
+        "shares": 170.0,
+        "balance": 219.5172576904297
+    },
+    {
+        "timestamp": "2025-03-15 20:40:49",
+        "ticker": "VGT",
+        "action": "SELL",
+        "price": 563.010009765625,
+        "shares": 170.0,
+        "balance": 95931.21891784668
+    },
+    {
+        "timestamp": "2025-03-15 20:40:50",
+        "ticker": "QQQ",
+        "action": "BUY",
+        "price": 479.6600036621094,
+        "shares": 199.0,
+        "balance": 478.87818908691406
+    },
+    {
+        "timestamp": "2025-03-15 20:40:53",
+        "ticker": "QQQ",
+        "action": "SELL",
+        "price": 479.6600036621094,
+        "shares": 199.0,
+        "balance": 95931.21891784668
+    },
+    {
+        "timestamp": "2025-03-15 20:40:54",
+        "ticker": "SOXX",
+        "action": "BUY",
+        "price": 201.1199951171875,
+        "shares": 476.0,
+        "balance": 198.1012420654297
+    },
+    {
+        "timestamp": "2025-03-15 20:41:00",
+        "ticker": "SOXX",
+        "action": "SELL",
+        "price": 201.1199951171875,
+        "shares": 476.0,
+        "balance": 95931.21891784668
+    },
+    {
+        "timestamp": "2025-03-15 20:41:04",
+        "ticker": "SOXX",
+        "action": "BUY",
+        "price": 201.1199951171875,
+        "shares": 476.0,
+        "balance": 198.1012420654297
+    }
+]

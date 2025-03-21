@@ -1,0 +1,70 @@
+version: '3.8'
+
+services:
+  loki:
+    image: grafana/loki:latest
+    container_name: loki
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./config/loki-config.yml:/etc/loki/loki-config.yml
+    restart: always
+    command: -config.file=/etc/loki/loki-config.yml
+
+  promtail:
+    image: grafana/promtail:latest
+    container_name: promtail
+    volumes:
+      - ./config/promtail-config.yml:/etc/promtail/promtail-config.yml
+      - ./logs:/AI_Trading_Bot/logs
+      - /var/log:/var/log
+    command: -config.file=/etc/promtail/promtail-config.yml
+    restart: always
+    depends_on:
+      - loki
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./config/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus  # 🔹 Persistencia de datos
+    restart: always
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+    depends_on:
+      - loki
+      - promtail
+      - pushgateway  # 🔹 Ahora depende de PushGateway
+
+  pushgateway:
+    image: prom/pushgateway:latest
+    container_name: pushgateway
+    ports:
+      - "9091:9091"
+    restart: always
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=_*1a2s3d4F5g6h
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_PATHS_PROVISIONING=/etc/grafana/provisioning
+    volumes:
+      - ./config/grafana:/var/lib/grafana
+      - ./config/provisioning:/etc/grafana/provisioning
+      - ./config/provisioning/dashboards:/etc/grafana/provisioning/dashboards  # 🔹 Agregamos dashboards
+    restart: always
+    depends_on:
+      - loki
+      - promtail
+      - prometheus
+
+volumes:
+  prometheus_data:  # 🔹 Define volumen para persistencia de Prometheus
+  grafana_data:     # 🔹 Define volumen para persistencia de Grafana

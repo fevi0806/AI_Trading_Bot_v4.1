@@ -1,0 +1,36 @@
+import os
+import re
+
+def remove_unicode_from_file(file_path):
+    """Elimina caracteres Unicode de un archivo y los reemplaza con versiones ASCII."""
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            content = file.read()
+
+        # ✅ Expresión regular para eliminar caracteres fuera del rango ASCII
+        cleaned_content = re.sub(r'[^\x00-\x7F]+', '', content)
+
+        # ✅ Sobrescribir el archivo con el contenido limpio
+        with open(file_path, "w", encoding="utf-8") as file:
+            file.write(cleaned_content)
+
+        print(f"✅ Unicode eliminado en: {file_path}")
+
+    except Exception as e:
+        print(f"❌ Error en {file_path}: {e}")
+
+def clean_project_unicode(project_path):
+    """Recorre todos los archivos Python en el proyecto y elimina caracteres Unicode."""
+    for root, _, files in os.walk(project_path):
+        for file in files:
+            if file.endswith(".py"):  # Solo archivos Python
+                file_path = os.path.join(root, file)
+                remove_unicode_from_file(file_path)
+
+# 📌 RUTA del proyecto (ajústala si es necesario)
+project_dir = os.path.abspath(os.path.dirname(__file__))
+
+# 🔥 Ejecutar limpieza
+clean_project_unicode(project_dir)
+
+print("🚀 Limpieza de Unicode completada en todo el proyecto.")

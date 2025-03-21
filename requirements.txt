@@ -1,0 +1,14 @@
+# AI Trading Bot Requirements
+yfinance==0.2.18                # For fetching historical market data
+ib_insync==0.9.72               # Interactive Brokers API wrapper
+promtail==0.3.0                 # Promtail for log aggregation
+grafana-api==0.1.0              # Grafana API for real-time stats visualization
+finbert==0.0.3                  # FinBERT for sentiment analysis
+numpy==1.24.0                   # Numerical computing
+pandas==1.5.3                   # Data analysis
+matplotlib==3.7.0               # Visualization library
+tensorflow==2.11.0              # TensorFlow for training models
+sklearn==1.2.0                  # For machine learning utilities
+pytest==7.2.2                   # Testing framework
+requests==2.28.1                # For making HTTP requests
+pyyaml==6.0                     # For reading YAML config files
